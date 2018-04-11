@@ -74,23 +74,32 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
+	'dsn'	   		=> '',
+/*
+	// Local Credentials
+	'hostname' 		=> 'localhost',
+	'username' 		=> 'root',
+	'password' 		=> 'root',
+	'database' 		=> 'sp18_news',
+*/
+	// Remote Credentials
+	'hostname' 		=> 'mysql.mel.codes',
+	'username' 		=> 'mc_maile',
+	'password' 		=> 'cxbm#P5@',
+	'database' 		=> 'webapps3',
+
+	'dbdriver' 		=> 'mysqli',
+	'dbprefix' 		=> '',
+	'pconnect' 		=> FALSE,
+	'db_debug' 		=> (ENVIRONMENT !== 'production'),
+	'cache_on' 		=> FALSE,
+	'cachedir' 		=> '',
+	'char_set' 		=> 'utf8',
+	'dbcollat' 		=> 'utf8_general_ci',
+	'swap_pre' 		=> '',
+	'encrypt'  		=> FALSE,
+	'compress' 		=> FALSE,
+	'stricton' 		=> FALSE,
+	'failover' 		=> array(),
+	'save_queries' 	=> TRUE
 );
