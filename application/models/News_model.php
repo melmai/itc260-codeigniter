@@ -18,5 +18,23 @@ class News_model extends CI_Model {
 
         $query = $this->db->get_where('news', array('slug' => $slug));
         return $query->row_array();
-    }
+    } // end get_news()
+
+    public function set_news()
+    {
+        $this->load->helper('url');
+
+        // replaces spaces with dashes in URL
+        $slug = url_title($this->input->post('title'), 'dash', TRUE);
+
+        // sets user input to database fields
+        $data = array(
+            'title' => $this->input->post('title'),     // user input
+            'slug' => $slug,                            // modified user input
+            'text' => $this->input->post('text')        // user input
+        );
+
+        // inserts data into db
+        return $this->db->insert('news', $data);
+    } // end set_news()
 }
