@@ -24,9 +24,8 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-			<li class="active"><a href="#" title="">Active Link</a></li>
-			<li><?=anchor('news/create','Create News')?></li>
-			<li><?=anchor('news','Show News')?></li>
+            <li class="active"><a href="#" title="">Active Link</a></li>
+            <li><?=anchor('news','News')?></li>
           </ul>
         </div>
       </div>
