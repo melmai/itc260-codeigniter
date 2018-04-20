@@ -83,9 +83,9 @@ $db['default'] = array(
 	'database' 		=> 'sp18_news',
 */
 	// Remote Credentials
-	'hostname' 		=> 'mysql.mel.codes',
-	'username' 		=> 'mc_maile',
-	'password' 		=> 'cxbm#P5@',
+	'hostname' 		=> 'localhost',
+	'username' 		=> 'root',
+	'password' 		=> 'M!4mwws02c',
 	'database' 		=> 'webapps3',
 
 	'dbdriver' 		=> 'mysqli',
