@@ -35,6 +35,13 @@ class News_model extends CI_Model {
         );
 
         // inserts data into db
-        return $this->db->insert('news', $data);
+        if($this->db->insert('news', $data))
+        { // if successful, return slug
+            return $slug;
+        } 
+        else 
+        { // else return false
+            return false;
+        }
     } // end set_news()
 }

@@ -60,7 +60,7 @@ class News extends CI_Controller {
             else                    // problem! - show warning
             {
                 feedback('News item not created!', 'error');
-                redirect('/news/create');
+                redirect('/news/');
             }
         }
     } // end of create()
