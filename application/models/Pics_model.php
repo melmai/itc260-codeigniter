@@ -5,16 +5,16 @@ class Pics_model extends CI_Model
 {
     public function __construct()
     {
-        $api_key = 'b722d5f18421ff913c8875622690f2a9';
-        $tags = 'bears,polar';
-        $perPage = 25;
-
     }
 
-    public function get_pics($tags = '')
+    public function get_pics($tag = NULL)
     {
-        if ($tags !== '')
+        if ($tag)
         {
+
+            $api_key = 'b722d5f18421ff913c8875622690f2a9';
+            $tags = $tag;
+            $perPage = 25;
             $url = 'https://api.flickr.com/services/rest/?method=flickr.photos.search';
             $url.= '&api_key=' . $api_key;
             $url.= '&tags=' . $tags;

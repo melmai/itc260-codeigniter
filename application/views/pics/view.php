@@ -3,7 +3,7 @@
 
 $this->load->view($this->config->item('theme') . 'header');
 
-echo '<h2>' . $data['title'] . '</h2>';
+//echo '<h2>' . $data['title'] . '</h2>';
 foreach($pics as $pic){
 
     $size = 'm';
