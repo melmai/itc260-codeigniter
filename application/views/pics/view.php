@@ -14,7 +14,7 @@ foreach($pics as $pic){
  
 }
 
-echo '<div>' . anchor('news','More News') . '</div>';
+echo '<div>' . anchor('pics','Back to Search') . '</div>';
 
 
 $this->load->view($this->config->item('theme') . 'footer');
