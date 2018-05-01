@@ -12,8 +12,8 @@ class Pics extends CI_Controller
 
     public function index()
     { // view tags, search form
-        $this->config->set_item('title', 'Pictures!!!');    // title tag
-        $this->load->view('pics/index');                    // loads index view
+        $this->config->set_item('title', 'Pictures!!!');    // title tag        
+        $this->load->view('pics/index');                    // show index view
     }
 
     public function view($tag = NULL)
@@ -24,9 +24,8 @@ class Pics extends CI_Controller
             redirect('/pics/');
         }
 
-        $data['title'] = 'Pictures of ' . $tag;
+        $data['title'] = $tag;
         $data['pics'] = $this->pics_model->get_pics($tag);
         $this->load->view('pics/view', $data);
-
     }
 }

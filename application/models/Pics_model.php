@@ -3,9 +3,7 @@
 
 class Pics_model extends CI_Model 
 {
-    public function __construct()
-    {
-    }
+    public function __construct(){}
 
     public function get_pics($tag = NULL)
     {
