@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Bootstrap themes use style settings to change look and feel -->
     <link rel="stylesheet" href="<?=base_url()?>public/themes/bootswatch/css/<?=$this->config->item('style')?>" media="screen">
-	
     <link rel="stylesheet" href="<?=base_url()?>public/themes/bootswatch/css/bootswatch.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>public/css/style.css">
     <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -26,6 +26,7 @@
           <ul class="nav navbar-nav">
             <li><?=anchor('news','News')?></li>
             <li><?=anchor('news/create','Add News')?></li>
+            <li><?=anchor('pics','Pics')?></li>
           </ul>
         </div>
       </div>
